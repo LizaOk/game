@@ -8,13 +8,12 @@ namespace Game
         int energy = 0;
         int level = 0;
         string name = "";
-
-        static int autoId = 1;
+ 
         private int Id = 0;
 
         private void generateId()
         {
-            this.Id = autoId++;
+            this.Id++;
         }
 
         public int getId() { return this.Id; }
@@ -68,7 +67,7 @@ namespace Game
         public void showInfo()
         {
             Console.WriteLine($"Class:{this.GetType()} Name: {name} ID: {this.Id}");
-            Console.WriteLine($"Health:{this.getHealth()} Enerhy: {this.getEnergy()}");
+            Console.WriteLine($"Health:{this.getHealth()} Energy: {this.getEnergy()}");
         }
     }
 }

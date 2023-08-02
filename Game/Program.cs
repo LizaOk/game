@@ -26,6 +26,9 @@ namespace Game
                 case "3":
                     hero = HeroType.Rogue;
                     break;
+                default:
+                    Console.WriteLine("Class is wrong");
+                    return;
             }
 
             Player player = Engine.CreatePlayer(namePl,hero);

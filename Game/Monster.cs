@@ -16,7 +16,7 @@ namespace Game
             this.damage = damage;
         }
 
-        public int getDamage(int damage)
+        public int getDamage()
         {
             return this.damage;
         }
@@ -26,7 +26,7 @@ namespace Game
             this.armor = armor;
         }
 
-        public int getArmor(int armor)
+        public int getArmor()
         {
             return this.armor;
         }
@@ -37,7 +37,7 @@ namespace Game
             this.pointsAfterWin = pointsAfterWin;
         }
 
-        public int getPointsAfterWin(int pointsAfterWin)
+        public int getPointsAfterWin()
         {
             return this.pointsAfterWin;
         }
