@@ -5,7 +5,41 @@ namespace Game
 {
     public class Engine
     {
+        public static Armor GenerateArmor()
+        {
+            Random rnd = new Random();
+            List<string> armorNames = new List<string>
+                {"Plate Mail", "Chainmail", "Leather Armor", "Scale Mail", "Robes", "Plate Armor"};
 
+            int index = rnd.Next(armorNames.Count);
+            string randomName = armorNames[index];
+
+            int randomDefence = rnd.Next(3, 21);
+
+            Armor armor = new Armor();
+            armor.SetName(randomName);
+            armor.SetDefence(randomDefence);
+
+            return armor;
+        }
+
+        public static Weapon GenerateWeapon()
+        {
+            Random rnd = new Random();
+            List<string> weaponNames = new List<string>
+                {"Sword", "Axe", "Bow", "Dagger", "Staff", "Mace"};
+
+            int index = rnd.Next(weaponNames.Count);
+            string randomName = weaponNames[index];
+
+            int randomDamage = rnd.Next(3, 21);
+
+            Weapon weapon = new Weapon();
+            weapon.SetName(randomName);
+            weapon.SetDamage(randomDamage);
+
+            return weapon;
+        }
         public static Monster GenerateMonster(Player player)
         {
             Random rnd = new Random();
@@ -66,6 +100,7 @@ namespace Game
             }
             player.setHealth(player.getEndurance()*10);
             player.setEnergy(player.getAgility()*10);
+            
             return player;
         }
     }

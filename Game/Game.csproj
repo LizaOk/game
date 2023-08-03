@@ -39,6 +39,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Armor.cs" />
         <Compile Include="Barbarian.cs" />
         <Compile Include="Engine.cs" />
         <Compile Include="HeroType.cs" />
@@ -49,6 +50,7 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Rogue.cs" />
         <Compile Include="Tank.cs" />
+        <Compile Include="Weapon.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
